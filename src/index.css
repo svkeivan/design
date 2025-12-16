@@ -51,6 +51,13 @@
   body {
     @apply bg-slate-50 text-slate-900 antialiased;
     font-family: 'Inter', system-ui, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Better touch targets for mobile */
+  button, a, input, select, textarea {
+    touch-action: manipulation;
   }
 }
 
