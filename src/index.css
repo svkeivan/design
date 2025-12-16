@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 40% 17%;
+    --card: 210 20% 97%;
+    --card-foreground: 210 40% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 17%;
+    --primary: 181 80% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 96 37% 56%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 15% 45%;
+    --accent: 38 76% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 181 80% 26%;
+    --radius: 0.75rem;
+    
+    /* Custom theme colors */
+    --color-primary: #0D7377;
+    --color-secondary: #7FB069;
+    --color-accent: #E8AA42;
+    --color-background: #FAFBFC;
+    --color-surface: #F0F4F5;
+    --color-text-primary: #1A2B3C;
+    --color-text-secondary: #5A6978;
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    
+    /* Design variables */
+    --theme-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --theme-radius: 12px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Smooth transitions for theme changes */
+.theme-transition {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
