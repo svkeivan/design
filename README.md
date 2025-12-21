@@ -1,4 +1,67 @@
-# React + TypeScript + Vite
+# Clarity Path Design System
+
+Design system and component library for the Clarity Path platform - a mental health and professional development platform for therapists.
+
+## Design System Documentation
+
+📖 **[View the complete Design System Documentation](./DESIGN_SYSTEM.md)**
+
+The design system is based on:
+- **Healthcare Color Palette** (Calm Professional)
+- **Soft Neumorphic Design Style**
+
+## Quick Start
+
+This project uses:
+- React 19 + TypeScript
+- Vite for build tooling
+- Tailwind CSS for styling
+- Motion (Framer Motion) for animations
+- pnpm for package management
+
+### Installation
+
+```bash
+pnpm install
+```
+
+### Development
+
+```bash
+pnpm dev
+```
+
+### Build
+
+```bash
+pnpm build
+```
+
+## Design Tokens
+
+Import design tokens directly in your code:
+
+```typescript
+import { designTokens, getColor, getShadow } from '@/config/designTokens';
+
+// Use colors
+const primaryColor = getColor('primary'); // '#0D7377'
+
+// Use shadows
+const cardShadow = getShadow('neumorphic');
+```
+
+## Components
+
+Sample components are available in `src/components/sample/` demonstrating:
+- Buttons
+- Cards
+- Forms
+- Progress indicators
+
+---
+
+## Original Template Info
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
